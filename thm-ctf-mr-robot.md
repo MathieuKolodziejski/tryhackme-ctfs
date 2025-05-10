@@ -77,8 +77,7 @@ With this finding, I immediately went to http://robot.thm/key-1-of-3.txt and fou
 Before running any WP vulnerability scanner, I played around the login form. I first tried to find exploits with the reset password feature but I didn't find anything relevant. I then noticed the following error message when trying random username/password pairs in the login form: `ERROR: Invalid username.`
 This is a bad authentification implementation and I'm going to try bruteforcing the credentials in 2-steps:
   
-1st step: bruteforce the username
-2nd step: bruteforce the password with the correct username
+1st step: bruteforce the username ---- 2nd step: bruteforce the password with the correct username
 
 In the previous /robots directory, I found a `fsocity.dic` dictionnary and I'll use it to find the username.
 I had a quick look at the login POST request to find the correct username and password parameters.
