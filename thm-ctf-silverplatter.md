@@ -58,8 +58,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 - Website visit
 
-Website seems to be built with https://html5up.net/
-Found a username in the Contact page: `If you'd like to get in touch with us, please reach out to our project manager on Silverpeas. His username is "scr1ptkiddy".`
+The website seems to be built with https://html5up.net/.
+
+I found a username in the Contact page: `If you'd like to get in touch with us, please reach out to our project manager on Silverpeas. His username is "scr1ptkiddy".`
 
 There are several sections in the HTML that are loaded at launch that I cannot find on the rendered page. One of the element is an HTML form:
 
