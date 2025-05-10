@@ -49,7 +49,7 @@ Nmap done: 1 IP address (1 host up) scanned in 50.05 seconds
 - Website visit
 
 A series of scenes from the TV show are displayed when you select commands from a terminal.
-When selecting the commands, I get a some prints in the console such as (but I am not going to try to use them):
+When selecting the commands, I get some prints in the console such as:
 
 ```
 Array(5) [ {\u2026}, "Mr. Robot : Who Is Mr. Robot : prepare", "Video", "Mr. Robot : Who Is Mr. Robot", "Mr. Robot : Who Is Mr. Robot : prepare" ]
