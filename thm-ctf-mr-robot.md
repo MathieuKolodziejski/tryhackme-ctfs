@@ -3,18 +3,12 @@
 ## General Info
 - **Room link:** [Mr Robot](https://tryhackme.com/room/mrrobot)
 
----
-
 ## Description
 
 Can you root this Mr. Robot styled machine? This is a virtual machine meant for beginners intermediate users. There are 3 hidden keys located on the machine, can you find them?
 
----
-
 ## Provided Files / Links
 - [x] Target Machine IP (10.10.48.69) => created host robot.thm
-
----
 
 ## Enumeration / Recon
 - Ports Enumeration
@@ -72,9 +66,6 @@ Array(5) [ {\u2026}, "Mr. Robot : Who is Mr. Robot : FSociety Gallery : Photo 1"
 
 I downloaded the `fsocity.dic` dictionnary (pretty sure it will be usefull later).
 With this finding, I immediately went to http://robot.thm/key-1-of-3.txt and found the 1st flag: **073403c8a58a1f80d943455fb30724b9**
-
-
----
 
 ## Exploitation / Analysis
 
