@@ -124,7 +124,7 @@ There are several sections in the HTML that are loaded at launch that I cannot f
 
 Nothing found in these directories
 
-- Directories Enumeration with proxies
+- Directories Enumeration with on the http-proxy port
 
 `gobuster dir -u http://10.10.116.253:8080 -q -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt`
  
