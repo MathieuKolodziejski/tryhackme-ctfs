@@ -53,7 +53,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
   - Notes:
     - ssh is open
     - http is open
-    - http-proxy
+    - http-proxy is open
     - No OS matches for host
 
 - Website visit
