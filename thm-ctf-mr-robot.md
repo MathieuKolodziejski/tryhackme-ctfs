@@ -80,8 +80,8 @@ With this finding, I immediately went to http://robot.thm/key-1-of-3.txt and fou
 
 ### Wordpress Website
 
-Credentials search
-------------------
+#### Credentials search
+
 
 Before running any WP vulnerability scanner, I played around the login form. I first tried to find exploits with the reset password feature but I didn't find anything relevant. I then noticed the following error message when trying random username/password pairs in the login form: `ERROR: Invalid username.`
 This is a bad authentification implementation and I'm going to try bruteforcing the credentials in 2-steps:
@@ -107,8 +107,7 @@ Hydra command: `hydra -l Elliot -P fsocity.dic 10.10.48.69 http-post-form "/wp-l
 
 The password is **ER28-0652**.
 
-Website access
---------------
+#### Website access
 
 With the credentials, I was able to log in.
 I then had a quick look at the plugins (11 plugins, a vulnerability assessment can be done later).
