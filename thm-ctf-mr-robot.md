@@ -65,9 +65,12 @@ Array(5) [ {\u2026}, "Mr. Robot : Who is Mr. Robot : FSociety Gallery : Photo 1"
  - /robots => (of course :-)) `fsocity.dic` and well `key-1-of-3.txt`
 
 I downloaded the `fsocity.dic` dictionnary (pretty sure it will be usefull later).
+
 With this finding, I immediately went to http://robot.thm/key-1-of-3.txt and found the 1st flag: **073403c8a58a1f80d943455fb30724b9**
 
+
 ## Exploitation / Analysis
+
 
 ### Wordpress Website
 
@@ -75,21 +78,27 @@ With this finding, I immediately went to http://robot.thm/key-1-of-3.txt and fou
 
 
 Before running any WP vulnerability scanner, I played around the login form. I first tried to find exploits with the reset password feature but I didn't find anything relevant. I then noticed the following error message when trying random username/password pairs in the login form: `ERROR: Invalid username.`
+
 This is a bad authentification implementation and I'm going to try bruteforcing the credentials in 2-steps:
   
 1st step: bruteforce the username ---- 2nd step: bruteforce the password with the correct username
 
 In the previous /robots directory, I found a `fsocity.dic` dictionnary and I'll use it to find the username.
+
 I had a quick look at the login POST request to find the correct username and password parameters.
 
 **1st Step**:
 Hydra command: `hydra -L fsocity.dic -p testpass 10.10.48.69 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:Invalid username"`
+
 Result: `[80][http-post-form] host: 10.10.48.69   login: Elliot   password: testpass`
+
 The username is **Elliot**.
 
 **2nd Step**:
 I will try to use the fsocity.dic first (858160 words) before using a bigger wordlist.
+
 Hydra command: `hydra -l Elliot -P fsocity.dic 10.10.48.69 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^:The password you entered for the username"`
+
 The password is **ER28-0652**.
 
 #### Website access
