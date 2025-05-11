@@ -1,7 +1,7 @@
-# Room: Neighbor
+# Room: Neighbour
 
 ## General Info
-- **Room link:** [Neighbor](https://tryhackme.com/room/neighbour)
+- **Room link:** [Neighbour](https://tryhackme.com/room/neighbour)
 
 ## Description
 
