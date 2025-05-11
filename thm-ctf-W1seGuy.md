@@ -9,10 +9,10 @@ Your friend told me you were wise, but I don't believe them. Can you prove me wr
 
 ## Provided Files / Links
 - [x] Target Machine IP (10.10.150.252)
-- [x] Python script (listed below)
+- [x] Python source code (listed below)
 
 ## Cryptography analysis
-- Python script
+- Source code
 
 We are given the following python script:
 
