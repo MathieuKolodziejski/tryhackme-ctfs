@@ -25,4 +25,4 @@ Let's try to exploit an IDOR vulnerability with the admin user => `http://10.10.
 
 The flag is then revealed in the page:
 
-`Hi, admin. Welcome to your site. The flag is: flag{66be95c478473d91a5358f2440c7af1f}`
+`Hi, admin. Welcome to your site. The flag is: flag{66be95c478473d91a5358f2440c7af1f}`.
