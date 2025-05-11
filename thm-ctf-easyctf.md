@@ -37,7 +37,7 @@ I found this directory:
 
 When accessing the page, it's a CMS `CMS Made Simple` and the version is 2.2.8.
 
-When looking for an exploit on this version I found the answer for the next question.
+When looking for an exploit on this version, I found the answer for the next question.
 
 What's the CVE you're using against the application?
 **CVE-2019-9053**
