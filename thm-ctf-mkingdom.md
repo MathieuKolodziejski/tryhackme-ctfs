@@ -62,6 +62,8 @@ I had previously started a listener on my machine `nc -lnvp 1337`, and I got a s
 
 I am now `wwww-data` user.
 
+### www-data user
+
 When looking around, I didn't find anything interesting with this user.
 
 I downloaded, ran linpeas.sh, and found this specific permission:
@@ -81,11 +83,15 @@ In the linpeas results, I also found a database password:
 ```
 I tried to use this password to switch user (`su toad`) and it worked.
 
+### toad user
+
 I was stuck with the user toad for a while and I started reading all the hidden files in the /home/toad directory.
 
 In the .bashrc file, I found a base64 encoded password `aWthVGVOVEFOdEVTCg==` => `ikaTeNTANtES`.
 
 I tried using it on the user mario and it worked.
+
+### mario user
 
 I found the flag location but couldn't seem to open it with cat (normal), nano, vim...
 
@@ -106,6 +112,8 @@ chmod u+s /bin/bash
 ``` 
 
 I just need to create a webserver on port 85 on my machine and wait a little bit (less than a minute) and the target machine is going to execute the counter.sh script on my machine.
+
+### root user
 
 The job ran and I was able to get root access. I found the root.txt flag in the root directory: **thm{e8b2f52d88b9930503cc16ef48775df0}**
 
