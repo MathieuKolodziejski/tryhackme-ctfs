@@ -48,4 +48,4 @@ aab3238922bcc25a6f606eb525ffdc56  -
 
 ```
 
-When accessing 10.10.104.45/cfcd208495d565ef66e7dff9f98764da I actually get the flag **flag{2477ef02448ad9156661ac40a6b8862e}**.
+When accessing `10.10.104.45/cfcd208495d565ef66e7dff9f98764da` I actually get the flag **flag{2477ef02448ad9156661ac40a6b8862e}**.
