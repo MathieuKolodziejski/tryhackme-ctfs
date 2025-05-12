@@ -21,6 +21,7 @@ I used crackstation.net to get the hash values.
 
 Starting from the first door on the left, to the last door on the right, I get the following md5 hash values:
 
+```
 1st door: c4ca4238a0b923820dcc509a6f75849b => 1
 2nd door: c81e728d9d4c2f636f067f89cc14862c => 2
 3rd door: eccbc87e4b5ce2fe28308fd9f2a7baf3 => 3
@@ -34,6 +35,7 @@ Starting from the first door on the left, to the last door on the right, I get t
 11th door: d3d9446802a44259755d38e6d163e820 => 10
 12th door: 45c48cce2e2d7fbdea1afc51c7c6ad26 => 9
 13th door: c9f0f895fb98ab9159f51fd0297e236d => 8
+```
 
 Let's try get the hash values for 0 and 14.
 
