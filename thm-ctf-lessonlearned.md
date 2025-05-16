@@ -63,6 +63,8 @@ Given there is a specific verbose error message when submitting a username and p
 
 After finding a couple of users, I stopped Hydra.
 
+## SQLi
+
 I used sqlmap to test for SQLi in the login page (with the username `karen`):
 
 `sqlmap -u "http://10.10.173.94/" --data="username=karen&password=" --batch --risk=1 --level=2 --random-agent --current-user`
