@@ -86,8 +86,8 @@ I then had a look at the /hmr_js, /hmr_css, /hmr_images and /hmr_logs, and found
 ```
 
 Notes:
--tester@hammer.thm seems to be a valid email
--hammerthm is a user in the target machine
+- tester@hammer.thm seems to be a valid email
+- hammerthm is a user in the target machine
 
 With the newly found email tester@hammer.thm, I then tried to brute-force the OTP in the http://10.10.249.72:1337/reset_password.php page with Burp Suite but there was a rate limit in place.
 
