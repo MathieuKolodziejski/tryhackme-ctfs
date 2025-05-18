@@ -85,10 +85,9 @@ I then had a look at the /hmr_js, /hmr_css, /hmr_images and /hmr_logs, and found
 [Mon Aug 19 12:09:51.109876 2024] [core:error] [pid 12354:tid 139999999999990] [client 192.168.1.50:45998] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/locked-down
 ```
 
-- Notes:
-	tester@hammer.thm seems to be a valid email
-
-	hammerthm is a user in the target machine
+Notes:
+-tester@hammer.thm seems to be a valid email
+-hammerthm is a user in the target machine
 
 With the newly found email tester@hammer.thm, I then tried to brute-force the OTP in the http://10.10.249.72:1337/reset_password.php page with Burp Suite but there was a rate limit in place.
 
