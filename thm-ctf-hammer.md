@@ -1,7 +1,7 @@
 # Room: Hammer
 
 ## General Info
-- **Room link:** [Hammer](https://tryhackme.com/room/hammer
+- **Room link:** [Hammer](https://tryhackme.com/room/hammer)
 
 
 ## Description
