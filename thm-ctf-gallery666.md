@@ -188,4 +188,4 @@ I try to run the command `sudo /bin/bash /opt/rootkit.sh` and select the option 
 
 I then export `export TERM=xterm` and run the script (`sudo /bin/bash /opt/rootkit.sh` and select the option `read`).
 
-Following https://gtfobins.github.io/gtfobins/nano/, I just have to press CTRL + R and CTRL + X and I can perform any command as root: cat /root/root.txt => **THM{ba87e0dfe5903adfa6b8b450ad7567bafde87}**. 
+Following https://gtfobins.github.io/gtfobins/nano/, I just have to press CTRL + R and CTRL + X and I can perform any command as root: `cat /root/root.txt` => **THM{ba87e0dfe5903adfa6b8b450ad7567bafde87}**. 
