@@ -126,23 +126,3 @@ I found this specific information in the "Files with Interesting Permissions" se
 I then went to https://gtfobins.github.io/gtfobins/env/ to see if I can exploit this permission. I tried exploiting this one `/usr/bin/env /bin/sh -p` and I actually got root access.
 
 I found the root.txt file (in /root/root.txt): **4d930091c31a622a7ed10f27999af363**.
-
-
-
-
-
-
-
-If I select the option `read`, I will be able to exploit nano to get privilege escalation as root.
-
-Before executing the script, I make some changes in my shell to stabilize further:
-
-- CTRL + Z to go back to my attacker machine
-- `stty raw -echo;fg`
-- I now have a stabilized shell where I all the key presses are well interpreted
-
-I try to run the command `sudo /bin/bash /opt/rootkit.sh` and select the option `read` but it get the error: Error `opening terminal: unknown`. It means that the terminal type isn't properly set when nano is launched with sudo from that script.
-
-I then export `export TERM=xterm` and run the script (`sudo /bin/bash /opt/rootkit.sh` and select the option `read`).
-
-Following https://gtfobins.github.io/gtfobins/nano/, I just have to press CTRL + R and CTRL + X and I can perform any command as root: cat /root/root.txt => **THM{ba87e0dfe5903adfa6b8b450ad7567bafde87}**. 
