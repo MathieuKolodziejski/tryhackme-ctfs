@@ -23,12 +23,6 @@ PORT   STATE SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-- Directories enumeration
-
-```
-gobuster dir -u http://10.10.51.179 -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt
-```
-
 When visiting the website, I notice the following script in the HTML:
 
 ```
