@@ -22,7 +22,7 @@ PORT   STATE SERVICE VERSION
 80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
 ```
 
-I try to access the ftp as anonymous but I anonymous access is disabled.
+I try to access the ftp as anonymous but anonymous access is disabled.
 
 - Directory Enumeration
 
