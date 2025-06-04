@@ -11,7 +11,7 @@ Deploy the machine and attempt the questions!
 - [x] Target Machine IP (10.10.222.78)
 
 ## Enumeration / Recon
-- Ports Enumeration
+- Ports Enumeration 
 
 `nmap -sV 10.10.222.78`
 
