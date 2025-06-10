@@ -14,6 +14,7 @@ This room was designed so that hackers can revisit the Willy Wonka's Chocolate F
 ## Enumeration / Recon
 
 - Port Enumeration:
+- 
 `nmap -sV -sC -Pn 10.10.147.150 -T5`
 
 ```
