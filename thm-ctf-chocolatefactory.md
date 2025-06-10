@@ -1,7 +1,7 @@
 # Room: Chocolate factory
 
 ## General Info
-- **Room link:** [Chocolate factory](https://tryhackme.com/room/chocolatefactory
+- **Room link:** [Chocolate factory](https://tryhackme.com/room/chocolatefactory)
 
 
 ## Description
