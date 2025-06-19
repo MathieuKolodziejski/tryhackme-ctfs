@@ -35,7 +35,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 I then found a username:password in `http://10.10.183.192:5984/_utils/document.html?secret/a1320dd69fb4570d0a3d26df4e000be7`: **atena:t4qfzcc4qN##**.
 
-I was able to login through ssh.
+I was able to login through ssh with these credentials.
 
 I then found a user.txt file in /home/atena: **THM{1ns3cure_couchdb}**.
 
